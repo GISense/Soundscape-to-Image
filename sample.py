@@ -90,6 +90,6 @@ trainer.eval()
 list2=["test1","test2","test3"]
 for i in list2:
     fmusic = model("./testaudio/"+i+".wav", 16000)["embedding"]
-    img=trainer.sample(text_embeds=fmusic,batch_size = 1,cond_scale = 1.,return_pil_images=True)
+    img=trainer.sample(text_embeds=fmusic,batch_size = 1,cond_scale = 1.)
     img=img.squeeze(0)
     imgsave("./testresult/"+i+".png")
