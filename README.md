@@ -26,6 +26,8 @@ If you use this algorithm in your research or applications, please cite this sou
 Environment: Python 3.9 or newer  
 See <em>requirements.txt</em>
 
+recommand to first train the audio encoder 
+
 after install imagen_pytorch, change its diffusion decoder into 343   
 
 put you train audio set and image set in ./extract/audio and ./extract/image
