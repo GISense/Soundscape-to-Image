@@ -43,8 +43,8 @@ project
 |   |-- audio
 |   |-- image
 |-- torchvggish
-|-- torchvggish
-|-- torchvggish
+|-- testaudio
+|-- testresult
 |-- train.py
 |-- sample.ipynb
 ```
