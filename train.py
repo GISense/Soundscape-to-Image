@@ -129,20 +129,3 @@ for k in range(epo):
     if (k == 30):
         trainer.save('./checkpoint.pt')
         torch.save(model, "wlc.pt")
-
-
-
-# feed images into imagen, training each unet in the cascade
-# do the above for many many many many steps
-# now you can sample an image based on the text embeddings as well as low resolution images
-
-# images = imagen.sample(
-#     texts = [
-#         'a whale breaching from afar',
-#         'young girl blowing out candles on her birthday cake',
-#         'fireworks with blue and green sparkles'
-#     ],
-#     start_at_unet_number = 2,              # start at unet number 2
-#     start_image_or_video = lowres_images,  # pass in low resolution images to be resoluted
-#     cond_scale = 3.)
-#
