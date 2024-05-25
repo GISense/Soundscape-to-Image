@@ -49,8 +49,8 @@ People experience the world through multiple senses simultaneously, contributing
 Environment: Python 3.9 or newer  
 See <em>requirements.txt</em>
 
-we combine our audio encoder with imagen decoder.
-recommand to first train the audio encoder 
+We combine our audio encoder with imagen decoder.
+Recommand to first train the audio encoder.  
 
 1. install imagen_pytorch, change its diffusion decoder max_text_len into 343,change max_seq_len into 768
 2. put you train audio set and image set in ./extract/audio and ./extract/image
@@ -62,8 +62,7 @@ recommand to first train the audio encoder
 
 ## Folder Structure 
 The folders and files are organized as follows.   
-put you traing audio and image in the extract folder, 
-and after training, put you test audio in the testaudio folder
+Put you traing audio and image in the extract folder and after training, put you test audio in the testaudio folder
 
 ```
 project
