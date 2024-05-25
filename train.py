@@ -14,8 +14,8 @@ from imagen_pytorch import ImagenTrainer
 
 torch.cuda.empty_cache()
 transform = transforms.Compose([
-    transforms.ToTensor(),  # 将numpy数组或PIL.Image读的图片转换成(C,H, W)的Tensor格式且/255归一化到[0,1.0]之间
-])  # 来自ImageNet的mean和variance
+    transforms.ToTensor(),
+]) 
 
 def getAllFiles(targetDir):
     listFiles = os.listdir(targetDir)

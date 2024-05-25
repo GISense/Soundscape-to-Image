@@ -43,8 +43,8 @@ def imshow(tensor, title=None):
 
 torch.cuda.empty_cache()
 transform = transforms.Compose([
-    transforms.ToTensor(),  # 将numpy数组或PIL.Image读的图片转换成(C,H, W)的Tensor格式且/255归一化到[0,1.0]之间
-])  # 来自ImageNet的mean和variance
+    transforms.ToTensor(),  
+]) 
 
 unet1 = Unet(
     dim = 128,
@@ -79,7 +79,7 @@ def imgsave(image,pa):
     cv2.imwrite(pa,tensor.cpu().numpy()*255)
 
 trainer = ImagenTrainer(imagen).cuda()
-trainer.load("./checkpoint.pt")
+trainer.load("./checkpoint.pt")# load the pretrain folder
 model = vggish.WLC(urls="", pretrained=False).cuda()
 model.load_state_dict(torch.load("wlc.pt").state_dict())
 model.eval()
@@ -87,7 +87,7 @@ trainer.eval()
 # 18,63,180,327,397,450,674,777,849,1439,1645,
 
 #input the audio name of the test data
-list2=["test1","test2","test3"]
+list2=["7307"]
 for i in list2:
     fmusic = model("./testaudio/"+i+".wav", 16000)["embedding"]
     img=trainer.sample(text_embeds=fmusic,batch_size = 1,cond_scale = 1.)
