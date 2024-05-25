@@ -4,7 +4,7 @@
 </p>
 
  <p align="center">
-    <img src="Figures.png" alt="framework" >
+    <img src="./githubimage/Figures.png" alt="framework" >
 </p>
 
 
@@ -38,10 +38,10 @@ keywords = {Soundscape, Street view images, Sense of place, Stable diffusion, Ge
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
- Our proposed Soundscape-to-Image Stable Diffusion model, which contains a Low-Resolution Diffusion Model and a Super-Resolution Diffusion Model, can then translate those semantic audio vectors into visual representations of place effectively. We evaluated our proposed model by using both machine-based and human-centered approaches and proved that the generated street view images align with our common perceptions, and accurately create several key street elements of the original soundscapes. It also demonstrates that soundscapes provide sufficient visual information places. 
+People experience the world through multiple senses simultaneously, contributing to our sense of place. Prior quantitative geography studies have mostly emphasized human visual perceptions, neglecting human auditory perceptions at place due to the challenges in characterizing the acoustic environment vividly. Also, few studies have synthesized the two-dimensional (auditory and visual) perceptions in understanding human sense of place. To bridge these gaps, we propose a Soundscape-to-Image Stable Diffusion model, a generative Artificial Intelligence (AI) model supported by Large Language Models (LLMs), aiming to visualize soundscapes through the generation of street view images. By creating audio-image pairs, acoustic environments are first represented as high-dimensional semantic audio vectors. Our proposed Soundscape-to-Image Stable Diffusion model, which contains a Low-Resolution Diffusion Model and a Super-Resolution Diffusion Model, can then translate those semantic audio vectors into visual representations of place effectively. We evaluated our proposed model by using both machine-based and human-centered approaches and proved that the generated street view images align with our common perceptions, and accurately create several key street elements of the original soundscapes. It also demonstrates that soundscapes provide sufficient visual information places. This study stands at the forefront of the intersection between generative AI and human geography, demonstrating how human multi-sensory experiences can be linked. We aim to enrich geospatial data science and AI studies with human experiences. It has the potential to inform multiple domains such as human geography, environmental psychology, and urban design and planning, as well as advancing our knowledge of human-environment relationships. 
 
  <p align="center">
-    <img src="structure.png" alt="framework" >
+    <img src="./githubimage/structure.png" alt="framework" >
 </p>
 
  ## Code Usage
@@ -50,25 +50,21 @@ Environment: Python 3.9 or newer
 See <em>requirements.txt</em>
 
 we combine our audio encoder with imagen decoder.
-
 recommand to first train the audio encoder 
-after install imagen_pytorch, change its diffusion decoder max_text_len into 343,change max_seq_len into 768
-<p align="center">
-    <img src="change1.png" alt="framework" >
-</p>
-<p align="center">
-    <img src="change2.png" alt="framework" >
-</p>
 
-put you train audio set and image set in ./extract/audio and ./extract/image
-train them by train.py 
-and put you test audio in testaudio
-sample you result by sample.py
+1. install imagen_pytorch, change its diffusion decoder max_text_len into 343,change max_seq_len into 768
+2. put you train audio set and image set in ./extract/audio and ./extract/image
+3. train by train.py 
+4. and put you test audio in testaudio
+5. sample you result by sample.py
 
 
 
 ## Folder Structure 
 The folders and files are organized as follows.   
+put you traing audio and image in the extract folder, 
+and after training, put you test audio in the testaudio folder
+
 ```
 project
 |-- extract
