@@ -57,12 +57,3 @@ def load_image(image_path, transform=None, max_size=None, shape=None):
         image = transform(image).unsqueeze(0)
         # print(image.shape)   #   [C, H, W]
     return image.to(device)
-
-
-
-# fcontent = load_image("./image/0.jpg", transform, shape=[256, 256])
-# for i in range(249):
-#     name="./image/"+str(i+1)+".jpg"
-#     content = load_image(name, transform, shape=[256, 256])
-#     fcontent=torch.cat((fcontent,content),-4)
-#     print(fcontent.shape)
