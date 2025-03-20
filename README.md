@@ -8,6 +8,28 @@
 </p>
 
 
+## Media Coverage
+* KUT Radio: https://www.kut.org/science/2024-12-12/university-of-texas-research-artificial-intelligence-sound-images
+
+* KXAN Austin: https://www.kxan.com/news/local/austin/can-ai-visualize-an-environment-from-sounds-ut-researchers-put-it-to-the-test/
+
+* AOL: https://www.aol.com/ai-visualize-environment-sounds-ut-170110588.html
+
+* TPR: https://www.tpr.org/science-technology/2024-12-13/ut-austin-professor-uses-ai-to-turn-soundscapes-into-landscapes
+
+* New Atlas: https://newatlas.com/ai-humanoids/ai-street-images-sound/
+
+* Austin Journal: https://austinjournal.com/stories/666193521-ai-converts-sound-into-street-view-images-using-new-generative-technology
+
+* Inavate: https://www.inavateonthenet.net/news/article/researchers-use-ai-to-turn-sounds-into-images
+
+* PetaPixel: https://petapixel.com/2024/12/03/ai-generates-accurate-images-of-streets-from-sound-recordings/
+
+* TALANOA 'O TONGA: https://talanoaotonga.to/ai-turns-street-sounds-into-realistic-images-with-remarkable-accuracy/
+
+* Videomaker: https://www.videomaker.com/news/ai-generates-accurate-street-images-from-only-sound-recordings/
+
+
 ## Table of Contents
 
 * [Citation](#citation)
