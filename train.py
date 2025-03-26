@@ -75,10 +75,10 @@ def main(args):
             for ni in range(1,p):
                 file_ext = os.path.splitext(files[nm+ni])
                 front, ext = file_ext
-                content = load_image("./data/image/" + str(front) + ".jpg", transform, shape=[256, 256])
+                content = load_image(args.train_image_path + str(front) + ".jpg", transform, shape=[256, 256])
                 fcontent = torch.cat((fcontent, content), -4)
 
-                music= model("./data/audio/" + str(front) + ".wav",16000)["embedding"]
+                music= model(args.train_audio_path + str(front) + ".wav",16000)["embedding"]
                 fmusic = torch.cat((fmusic, music), -3)
 
             loss = trainer(fcontent, text_embeds = fmusic, unet_number = args.train_unet_number, max_batch_size = p)
@@ -95,8 +95,8 @@ def main(args):
             trainer.save(f"{args.checkpoint_path}/imagen_{args.train_unet_number}_{k}_epochs.pt")
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--train-image-path', type=str, default= './data/image', required=False, help="path to the dataset")
-    parser.add_argument('--train-audio-path', type=str, default= './data/audio', required=False, help="path to the dataset")
+    parser.add_argument('--train-image-path', type=str, default= './data/image/', required=False, help="path to the dataset")
+    parser.add_argument('--train-audio-path', type=str, default= './data/audio/', required=False, help="path to the dataset")
     parser.add_argument('--pre-trained-audio-encoder', type=str, default= './wlc.pt', required=False, help="path to the pre-trained audio encoder")
     parser.add_argument('--checkpoint-path', type=str, default= './checkpoints', required=False, help="path to the checkpoint")
     parser.add_argument('--batch-size', type=int, default= 5, required=False, help="batch size")
