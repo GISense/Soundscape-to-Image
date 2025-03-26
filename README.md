@@ -76,7 +76,7 @@ People experience the world through multiple senses simultaneously, contributing
 
 1. Environment: Python 3.9 or newer  
 
-2. Install denpendency 
+2. Install dependency 
 ```bash
   pip install -r requirements.txt
   ```
@@ -84,6 +84,10 @@ People experience the world through multiple senses simultaneously, contributing
 ## Download Models
 We recommend using our pre-trained audio encoder.
 Please download [wlc.pt](https://drive.google.com/file/d/1QsF_tdm5Vk-qQ8kxfAAMs-xjKMDSpl5x/view?usp=drive_link) before starting training or inference.
+
+We also provide [CEUS.pt](https://drive.google.com/file/d/1ZQDRqwDZ51-Geq0MNrPtTZTSpOZdB6TJ/view), a pre-trained checkpoint of our Soundscape-to-image model trained on 7.5k [audio](https://drive.google.com/file/d/1X0i7cVUHNYHreemzI3Z3L4fOI3IR_7p0/view?usp=sharing) and [image](https://drive.google.com/file/d/1Y16TcTXKFcQjU1jHzQgchSTxC4KCQVJe/view?usp=sharing) pairs gathered from publicly available Youtube videos. 
+
+
 ## Data Management
 1. Place your training audio dataset and image dataset in the respective directories.
 2. Ensure that paired audio and image files share the same filename. Here’s an example:
@@ -145,7 +149,7 @@ python train.py --train-image-path ./data/image --train-audio-path ./data/audio 
 ```
 
 
-## Interference
+## Inference
 After training, you can test or apply the model by running [sample.py](sample.py).
 
 
@@ -185,5 +189,7 @@ project
 Yonggai Zhuang: start128@163.com
 
 Junbo Wang: bbojunbo@gmail.com
+
+Albert Jiang: albertjiang@utexas.edu
 
 Yuhao Kang: yuhao.kang@austin.utexas.edu
