@@ -81,7 +81,7 @@ People experience the world through multiple senses simultaneously, contributing
   pip install -r requirements.txt
   ```
  
-## Pre-trained Audio Encoder
+## Download Models
 We recommend using our pre-trained audio encoder.
 Please download [wlc.pt](https://drive.google.com/file/d/1QsF_tdm5Vk-qQ8kxfAAMs-xjKMDSpl5x/view?usp=drive_link) before starting training or inference.
 ## Data Management
